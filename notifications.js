@@ -1,5 +1,5 @@
 // 推送通知函数
-export const sendPushNotification = async (sitemapUrl, newUrls, pushKeys = ['']) => {
+export const sendPushNotification = async (sitemapUrl, newUrls, pushKeys = ['gB4bW2UeouPwkJMNDsVR9b']) => {
   const hostname = new URL(sitemapUrl).hostname;
   const title = `Sitemap ${hostname} 发现新url`;
   const body = `检测到${newUrls.length}个新增URL:\n${newUrls.join('\n')}`;
